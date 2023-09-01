@@ -3,7 +3,7 @@ const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
 const router = express.Router()
 
-const Test = require('../class/test')
+
 
 // ================================================================
 
@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
     // вказуємо назву контейнера
     name: 'index',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: [],
 
     // вказуємо назву сторінки
     title: 'Назва сторінки',
@@ -26,7 +26,7 @@ router.get('/', function (req, res) {
 
     // вказуємо дані,
     data: {
-      test: new Test().test,
+      
     },
   })
   // ↑↑ сюди вводимо JSON дані
